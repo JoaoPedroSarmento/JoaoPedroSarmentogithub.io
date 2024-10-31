@@ -16,7 +16,7 @@ function criarCardProdutoParaPaginaDeDetalhesDoProdutoECarrinho(
               ? `<button class="btn-carrinho" data-id="${id}">Adicionar ao carrinho</button>`
               : ""
           }
-          <a href="../">
+          <a href="./">
             <button class="voltar">Voltar</button>
           </a>
         </div>
