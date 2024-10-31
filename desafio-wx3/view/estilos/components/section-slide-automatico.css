@@ -1,0 +1,55 @@
+#slide-automatico {
+  background-color: #545353;
+}
+#slide-automatico img {
+  width: 100%;
+  height: 450px;
+}
+
+#banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+#container-bolas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0px;
+}
+.banner-ativado {
+  display: block;
+}
+.banner-desativado {
+  display: none;
+}
+.bola-externa-slide {
+  display: flex;
+  border: 1px solid var(--cor-texto-geral);
+  border-radius: 100%;
+}
+.container-bola {
+  padding: 4px;
+}
+.bola-interna-slide,
+.bola-depoimentos,
+.bola-carrossel {
+  border-radius: 100%;
+  padding: 4px;
+  cursor: pointer;
+  background-color: var(--cor-texto-geral);
+}
+
+.banner {
+  animation: slide 1s;
+}
+@keyframes slide {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}

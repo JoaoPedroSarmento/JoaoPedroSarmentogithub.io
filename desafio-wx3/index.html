@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio / WX3 E-commerce</title>
+    <link rel="stylesheet" href="./view/estilos/pages/index.css" />
+    <script type="module" src="./view/scripts/pages/index.js" defer></script>
+  </head>
+  <body>
+    <dialog id="menu-modal" class="modal">
+      <div class="modal-content">
+        <nav class="menu">
+          <ul>
+            <li><a href="./carrinho.html">Carrinho</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">CINTAS</a></li>
+            <li><a href="#">CALCINHAS</a></li>
+            <li><a href="#">PIJAMAS</a></li>
+            <li><a href="#">CAMISOLAS</a></li>
+            <li><a href="#">GESTANTE</a></li>
+            <li><a href="#">SEXY</a></li>
+            <li><a href="#">SUTIÃS</a></li>
+            <li><a href="#">COLEÇÕES</a></li>
+            <li><a href="#">OUTLET</a></li>
+            <li><a href="#">LOGIN </a></li>
+            <li><a href="#">CADASTRO </a></li>
+            <li><a href="#">CARRINHO </a></li>
+            <li><a href="#">FAVORTIOS </a></li>
+          </ul>
+        </nav>
+      </div>
+    </dialog>
+
+    <header>
+      <h1>LOGO</h1>
+      <nav>
+        <ul>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">CINTAS</a></li>
+          <li><a href="#">CALCINHAS</a></li>
+          <li><a href="#">PIJAMAS</a></li>
+          <li><a href="#">CAMISOLAS</a></li>
+          <li><a href="#">GESTANTE</a></li>
+          <li><a href="#">SEXY</a></li>
+          <li><a href="#">SUTIÃS</a></li>
+          <li><a href="#">COLEÇÕES</a></li>
+          <li><a href="#">OUTLET</a></li>
+        </ul>
+      </nav>
+      <div id="container-icones">
+        <div class="container-icone">
+          <img src="./view/img/procurar.png" alt="pesquisar" class="icones" />
+        </div>
+        <div class="container-icone" id="favoritar">
+          <img src="./view/img/coracao.png" alt="pesquisar" class="icones" />
+        </div>
+        <div class="container-icone" id="perfil">
+          <img src="./view/img/perfil.png" alt="pesquisar" class="icones" />
+          <p id="login-cadastro">
+            <a href="#">Login</a> | <a href="">Cadastre-se</a>
+          </p>
+        </div>
+        <div class="container-icone" id="carrinho">
+          <a href="./carrinho.html">
+            <img src="./view/img/carrinho.png" alt="pesquisar" class="icones" />
+          </a>
+          <p id="carrinho-precos">R$ 0,00</p>
+        </div>
+        <div class="container-icone">
+          <img src="./view/img/menu.png" alt="menu" id="menu" class="icones" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="slide-automatico">
+        <div id="banners">
+          <h2 class="banner-ativado banner" data-banner="1">BANNER 1</h2>
+          <h2 class="banner-desativado banner" data-banner="2">BANNER 2</h2>
+          <h2 class="banner-desativado banner" data-banner="3">BANNER 3</h2>
+        </div>
+        <div id="container-bolas">
+          <div class="bola-externa-slide container-bola">
+            <div class="bola-interna-slide" data-slide="1"></div>
+          </div>
+          <div class="container-bola">
+            <div class="bola-interna-slide" data-slide="2"></div>
+          </div>
+          <div class="container-bola">
+            <div class="bola-interna-slide" data-slide="3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lancamentos">
+        <h3>Lançamentos</h3>
+        <div class="botoes-carrossel">
+          <img
+            src="./view/img/seta-esquerda.png"
+            width="15"
+            alt="seta esquerda"
+            class="seta-esquerda"
+          />
+          <div class="bolas-carrossel"></div>
+          <img
+            src="./view/img/seta-direita.png"
+            width="15"
+            alt="seta direita"
+            class="seta-direita"
+          />
+        </div>
+        <div class="container-carrossel"></div>
+
+        <h3 class="ver-todos"><span>Ver</span> todos</h3>
+      </section>
+      <div id="promocao-usuario">
+        <div class="content-container-promocao-usuario">
+          <img src="./view/img/courier_10543180.png" alt="caixa de entrega" />
+          <div>
+            <p><span class="bold">FRETE GRÁTIS</span> A PARTIR DE</p>
+            <p>R$ 199 (SUDESTE) E R$ 299 (BRASIL)</p>
+          </div>
+        </div>
+        <div class="content-container-promocao-usuario">
+          <img src="./view/img/boleto.png" alt="caixa de entrega" />
+          <div>
+            <p><span class="bold">10% de desconto</span> NO</p>
+            <p>BOLETO BANCÁRIO / DEPÓSITO</p>
+          </div>
+        </div>
+        <div class="content-container-promocao-usuario">
+          <img src="./view/img/cartao.png" alt="caixa de entrega" />
+          <div>
+            <p>
+              <span class="bold">ATÉ 10x sem juros</span>
+            </p>
+            <p>NOS CARTÕES DE CRÉDITO</p>
+          </div>
+        </div>
+        <div class="content-container-promocao-usuario">
+          <img src="./view/img/cartao-duplo.png" alt="caixa de entrega" />
+          <div>
+            <p>PAGAMENTO COM ATÉ</p>
+            <span class="bold">2 CARTÕES</span>
+          </div>
+        </div>
+      </div>
+      <section id="destaques">
+        <h3>Destaques</h3>
+        <div class="botoes-carrossel">
+          <img
+            src="./view/img/seta-esquerda.png"
+            width="15"
+            alt="seta esquerda"
+            class="seta-esquerda"
+          />
+          <div class="bolas-carrossel"></div>
+          <img
+            src="./view/img/seta-direita.png"
+            width="15"
+            alt="seta direita"
+            class="seta-direita"
+          />
+        </div>
+        <div class="container-carrossel"></div>
+
+        <h3 class="ver-todos"><span>Ver</span> todos</h3>
+      </section>
+      <section id="veja-mais">
+        <div class="box-veja-mais box1">
+          <p>Camisolas</p>
+          <div>
+            <p>Para quem</p>
+            <p>quer relaxar</p>
+          </div>
+          <button class="btn-veja-mais">VEJA MAIS</button>
+        </div>
+        <div class="box-veja-mais box2">
+          <p>Linha noite</p>
+          <div>
+            <p>Para quem ama</p>
+            <p>praticidade</p>
+          </div>
+          <button class="btn-veja-mais">VEJA MAIS</button>
+        </div>
+        <div class="box-veja-mais box3">
+          <p>Sutiãs</p>
+          <div>
+            <p>Para quem</p>
+            <p>ama conforto</p>
+          </div>
+          <button class="btn-veja-mais">VEJA MAIS</button>
+        </div>
+      </section>
+      <section id="outlet">
+        <h3>Outlet</h3>
+        <div class="botoes-carrossel">
+          <img
+            src="./view/img/seta-esquerda.png"
+            width="15"
+            alt="seta esquerda"
+            class="seta-esquerda"
+          />
+          <div class="bolas-carrossel"></div>
+          <img
+            src="./view/img/seta-direita.png"
+            width="15"
+            alt="seta direita"
+            class="seta-direita"
+          />
+        </div>
+        <div class="container-carrossel"></div>
+        <h3 class="ver-todos"><span>Ver</span> todos</h3>
+      </section>
+
+      <div id="banner-fixo">
+        <img src="./view/img/banner-fixo.png" alt="banner fixo" />
+      </div>
+      <div id="depoimentos">
+        <div class="textos">
+          <h1>Depoimentos</h1>
+          <h2>O que as nossas clientes estão dizendo</h2>
+        </div>
+        <div
+          class="container-depoimentos container-depoimento-ativado"
+          data-slide-depoimento="1"
+        >
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 1.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 2.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 3.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-depoimentos container-depoimento-desativado"
+          data-slide-depoimento="2"
+        >
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 4.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 5.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 6.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-depoimentos container-depoimento-desativado"
+          data-slide-depoimento="3"
+        >
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 7.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 8.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 9.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-depoimentos container-depoimento-desativado"
+          data-slide-depoimento="4"
+        >
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 10.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 11.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 12.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-depoimentos container-depoimento-desativado"
+          data-slide-depoimento="5"
+        >
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 13.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 14.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+          <div class="content-container-depoimento">
+            <div class="container-pessoa-depoimento">
+              <div>
+                <img
+                  src="./view/img/pessoa.jpg"
+                  class="foto-pessoa"
+                  alt="foto pessoa"
+                />
+              </div>
+              <div class="dados-pessoa">
+                <p class="nome">Eliana A 15.</p>
+                <p class="local">São José do Rio Preto - SP</p>
+                <div class="estrelas">
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                  <img
+                    src="\./view/img/icons8-estrela-48.png"
+                    width="12"
+                    alt="estrela"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comentario-pessoa">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              "
+            </div>
+          </div>
+        </div>
+        <div class="bolas">
+          <div
+            class="bola-depoimentos bola-ativa-depoimentos"
+            data-slide="1"
+          ></div>
+          <div class="bola-depoimentos" data-slide="2"></div>
+          <div class="bola-depoimentos" data-slide="3"></div>
+          <div class="bola-depoimentos" data-slide="4"></div>
+          <div class="bola-depoimentos" data-slide="5"></div>
+        </div>
+      </div>
+      <footer>
+        <div id="container-cadastro">
+          <h1>LOGO</h1>
+          <div id="mensagem-cadastro">
+            <p>Cadastre-se o seu e-mail e <span class="bold">ganhe</span></p>
+            <p>
+              <span class="bold">10% de desconto </span> na sua primeira compra
+            </p>
+          </div>
+          <form id="formulario-cadastro">
+            <input type="text" id="nome-cadastro" placeholder="NOME" />
+            <input type="email" id="email-cadastro" placeholder="E-MAIL" />
+            <input type="submit" id="btn-cadastro" value="CADASTRAR" />
+          </form>
+        </div>
+
+        <div id="rodape-informacoes-loja">
+          <div id="banner-loja-contato">
+            <img
+              src="./view/img/imagem-da-loja.png"
+              id="imagem-loja"
+              alt="imagem da loja"
+            />
+            <img
+              src="./view/img/contato-imagem.png"
+              id="entre-em-contanto"
+              alt="entre em contatno imagem"
+            />
+          </div>
+          <div id="redes-sociais">
+            <a
+              href="https://www.facebook.com/wx3.ecommerce/"
+              target="_blank"
+              title="facebook WX3"
+            >
+              <img
+                src="./view/img/facebook.png"
+                alt="facebook ícone"
+                class="rodape-icone"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/wx3.ecommerce/"
+              target="_blank"
+              title="instagram Wx3"
+            >
+              <img
+                src="./view/img/instagram.png"
+                alt="instagram ícone"
+                class="rodape-icone"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@wx3"
+              target="_blank"
+              title="youtube WX3"
+            >
+              <img
+                src="./view/img/yt.png"
+                alt="youtube ícone"
+                class="rodape-icone"
+              />
+            </a>
+          </div>
+
+          <div id="rodape-info-institucional">
+            <div id="institucional">
+              <h3>Insitucional</h3>
+              <ul>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Loja física</a></li>
+                <li><a href="#">Central de ajuda</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">PROCON-RJ</a></li>
+              </ul>
+            </div>
+            <div id="contato">
+              <h3>Contato</h3>
+              <ul>
+                <li><a href="#">Segunda a sexta de 7 as 17h</a></li>
+                <li><a href="#">(22) 2522-2222</a></li>
+                <li><a href="#">(22) 99999-9999</a></li>
+                <li><a href="#">contato@teste.com.br</a></li>
+              </ul>
+            </div>
+            <div id="formas-de-pagamento">
+              <h3>Formas de pagamento</h3>
+              <img
+                src="./view/img/formas-de-pagamento.png"
+                width="125px"
+                alt="formas de pagamento"
+              />
+            </div>
+            <div id="formas-de-entrega">
+              <h3>Forma de entrega</h3>
+              <img
+                src="./view/img/correio.png"
+                width="100px"
+                alt="correios imagem"
+              />
+            </div>
+            <div id="seguranca-e-qualidade">
+              <h3>Segurança e qualidades</h3>
+              <div id="content-seguraca-imagem">
+                <img src="./view/img/bit.png" alt="bit imagem" />
+                <img
+                  src="./view/img/ssl.png"
+                  width="70px"
+                  alt="ssl segurança imagem"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="localizacao">
+          <h4>
+            LOREM IPSUM COMERCIO DE VISTUÁRIO LTDA. | CNPJ: 01.111.000/0001-01
+            /RUA DAS COVES, 100, CENTRO, NOVA FRIBURGO /RJ - 28.600-000
+          </h4>
+        </div>
+        <div id="texto-adicional">
+          <p>
+            Preços e condições de pagamento exclusivos para compras via
+            internet. Ofertas válidas até o término de nosso estoques para
+            internet. Vendas sujeitas à analise e
+          </p>
+          <p>
+            confirmações de dados. Em caso de divergência de preços no site, o
+            valor válido é o do Carrinho de Compras
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

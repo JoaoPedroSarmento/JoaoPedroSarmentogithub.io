@@ -1,0 +1,119 @@
+header {
+  background-color: var(--cor-header);
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 10vh;
+}
+
+nav,
+header,
+#container-icones,
+nav ul,
+.container-icone {
+  display: flex;
+  align-items: center;
+}
+nav,
+header,
+#container-icones,
+nav ul,
+#login-cadastro a {
+  font-size: 0.95vw;
+  gap: 10px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li:first-of-type a:first-of-type,
+header a:hover {
+  border-bottom: 2px solid var(--cor-borda-link);
+}
+
+nav a {
+  font-family: var(--fonte-sacramento);
+}
+
+a {
+  color: var(--cor-nav-links);
+  text-decoration: none;
+  font-family: var(--fonte-carrois);
+}
+
+.icones {
+  width: 1.2vw;
+  height: 16px;
+  cursor: pointer;
+}
+
+#container-icones a,
+#container-icones p {
+  font-size: 0.8vw;
+}
+
+#container-icones {
+  display: flex;
+  justify-content: space-around;
+}
+#container-icones p,
+#container-icone a,
+.container-icone {
+  gap: 0.2vw;
+}
+
+#menu {
+  display: none;
+}
+
+nav ul {
+  gap: 2.2vw;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+#menu-modal {
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.modal-content {
+  width: 100%;
+  position: relative;
+  margin: 10vh auto;
+  background: var(--cor-header);
+  border-radius: 8px;
+  padding: 20px;
+  height: calc(20vh + 20vh);
+  animation: deslizarMenu 0.4s ease;
+}
+
+.modal nav ul {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+}
+
+@keyframes deslizarMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

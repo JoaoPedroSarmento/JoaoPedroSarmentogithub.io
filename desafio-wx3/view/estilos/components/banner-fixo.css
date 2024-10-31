@@ -1,0 +1,10 @@
+#banner-fixo {
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  margin-bottom: 40px;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}

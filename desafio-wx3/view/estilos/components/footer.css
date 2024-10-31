@@ -1,0 +1,162 @@
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#container-cadastro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3.5em;
+  min-height: 260px;
+  gap: 3vw 10vw;
+  background-color: var(--cinza-escuro);
+}
+
+#mensagem-cadastro p,
+#mensagem-cadastro span {
+  text-align: justify;
+  font-size: 12px;
+  color: var(--cor-texto-geral);
+  font-family: var(--fonte-popins);
+}
+
+#formulario-cadastro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#formulario-cadastro input {
+  min-width: 100px;
+}
+#nome-cadastro,
+#email-cadastro {
+  border: 0;
+  outline: 0;
+  width: 10vw;
+  padding: 5px;
+  height: 30px;
+}
+
+#btn-cadastro {
+  all: unset;
+  height: 30px;
+  width: 7vw;
+  background-color: var(--preto-escuro);
+  color: var(--cor-texto-geral);
+  font-size: 10px;
+  text-align: center;
+  font-family: var(--fonte-popins);
+  cursor: pointer;
+}
+
+input::placeholder {
+  padding: 5px;
+  font-size: 10px;
+  color: var(--preto-escuro);
+  font-family: var(--fonte-popins);
+}
+
+#rodape-informacoes-loja {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  gap: 3em;
+  align-self: center;
+  width: 70vw;
+  margin-top: -7.5vw;
+  background-color: var(--cor-texto-geral);
+}
+
+#banner-loja-contato {
+  display: grid;
+  grid-template-areas: "img1 img1 img2";
+  gap: 10px;
+  width: 100%;
+}
+
+#imagem-loja {
+  width: 100%;
+  height: 100%;
+  grid-area: img1;
+}
+#entre-em-contanto {
+  width: 100%;
+  height: 100%;
+  grid-area: img2;
+}
+#redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-self: center;
+}
+
+#rodape-info-institucional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: var(--fonte-popins);
+  gap: 5vw;
+  color: var(--cinza-escuro);
+  font-size: 10px;
+}
+
+#rodape-info-institucional ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+#rodape-info-institucional a {
+  color: var(--cinza-escuro);
+  font-weight: 600;
+}
+
+#institucional,
+#contato,
+#formas-de-pagamento,
+#formas-de-entrega,
+#seguranca-e-qualidade {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#localizacao {
+  border-top: 2px solid var(--cinza-escuro);
+}
+#texto-adicional,
+#localizacao {
+  border-bottom: 2px solid var(--cinza-escuro);
+}
+
+#localizacao,
+#texto-adicional {
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+  font-family: var(--fonte-popins);
+  color: var(--cinza-escuro);
+  font-weight: 600;
+}
+
+.rodape-icone {
+  width: 25px;
+  height: 25px;
+  transition: 0.2s;
+}
+.rodape-icone:hover {
+  scale: 1.2;
+}
+
+#content-seguraca-imagem {
+  display: flex;
+  align-items: start;
+}

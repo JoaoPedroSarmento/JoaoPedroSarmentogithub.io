@@ -1,0 +1,74 @@
+#veja-mais {
+  padding: 22px;
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+  grid-template-areas:
+    "box1 box2"
+    "box1 box3";
+  color: var(--cor-texto-geral);
+  background-color: var(--cor-fundo-section-veja-mais);
+  min-height: 100vh;
+}
+
+.box1 {
+  background: linear-gradient(5deg, rgb(33, 32, 32) 15%, gray 100%);
+  grid-area: box1;
+}
+
+.box2 {
+  background: linear-gradient(
+    15deg,
+    rgb(33, 32, 32) 10%,
+    rgb(128, 128, 128) 70%
+  );
+  grid-area: box2;
+}
+
+.box3 {
+  background: linear-gradient(
+    20deg,
+    rgb(33, 32, 32) 5%,
+    rgb(128, 128, 128) 85%
+  );
+  grid-area: box3;
+}
+
+.box-veja-mais {
+  width: 35vw;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+.box-veja-mais div p {
+  font-family: var(--fonte-popins);
+}
+
+.btn-veja-mais {
+  padding: 5px 35px;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 0 0.2px var(--cor-texto-geral);
+  background-color: transparent;
+  color: var(--cor-texto-geral);
+  font-weight: bold;
+  font-size: 12px;
+  transition: color, box-shadow, background-color 1s;
+  font-family: var(--fonte-raleway);
+}
+
+.btn-veja-mais:hover {
+  box-shadow: 0 0 0 0.2px var(--preto-escuro);
+  background-color: var(--cor-texto-geral);
+  color: var(--preto-escuro);
+}
+
+.box-veja-mais > p {
+  font-size: 4em;
+  font-family: var(--fonte-dacing);
+}

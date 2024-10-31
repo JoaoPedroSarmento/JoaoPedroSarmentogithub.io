@@ -1,0 +1,33 @@
+/* fontes */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Great+Vibes&family=Indie+Flower&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Great+Vibes&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300&family=Raleway:ital,wght@0,100;0,200;0,300&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+:root {
+  /* cores */
+  --cor-header: #fff;
+  --cor-nav-links: var(--preto-escuro);
+  --cor-borda-link: var(--preto-escuro);
+  --cor-fundo-div-promosao-usuario: var(--preto-escuro);
+  --cor-fundo-section-veja-mais: var(--preto-escuro);
+  --cor-header: #fff;
+  --cor-texto-geral: #fff;
+  --preto-escuro: #000;
+  --preto-2: rgba(0, 0, 0, 0.1);
+  --cinza-claro: #525252;
+  --cinza-claro-2: #6c6c6c;
+  --cinza-escuro: #2f2e2ed8;
+  --cinza-escuro-2: #2b2a2a;
+  --laranja: #ff4747;
+  --marrom-claro: #8c5e5e;
+  /* fontes */
+  --fonte-raleway: "Raleway", sans-serif;
+  --fonte-great-vibes: "Sacramento", cursive;
+  --fonte-carrois: "Carrois Gothic", sans-serif;
+  --fonte-popins: "Poppins", sans-serif;
+  --fonte-noto: "Noto Sans", sans-serif;
+  --fonte-dacing: "Dancing Script", cursive;
+}

@@ -1,0 +1,72 @@
+@import url("../root.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome-produto {
+  color: var(--preto-escuro);
+}
+.produto-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--cor-fundo-section-veja-mais);
+}
+
+.card-produto {
+  border: 1px solid var(--cinza-claro);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  margin: 16px;
+  box-shadow: 0 2px 8px var(--preto-2);
+  background-color: var(--cor-texto-geral);
+}
+
+.imagem-produto {
+  width: 100%;
+  height: auto;
+}
+
+.info-produto {
+  padding: 16px;
+  text-align: center;
+}
+
+.nome-produto {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.preco-produto {
+  color: var(--laranja);
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.btn-carrinho,
+.voltar {
+  width: 200px;
+  background-color: var(--preto-escuro);
+  color: var(--cor-texto-geral);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn-carrinho:hover {
+  background-color: var(--cinza-claro);
+}
+
+.btns {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}

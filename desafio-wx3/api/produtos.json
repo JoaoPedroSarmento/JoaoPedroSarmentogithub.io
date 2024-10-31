@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Casual",
+    "preco": 55.9
+  },
+  {
+    "id": 2,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Social",
+    "preco": 65.92
+  },
+  {
+    "id": 3,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Seda",
+    "preco": 75.9
+  },
+  {
+    "id": 4,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Algodão",
+    "preco": 45.9
+  },
+  {
+    "id": 5,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Estampada",
+    "preco": 59.9
+  },
+  {
+    "id": 6,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Jeans",
+    "preco": 85.9
+  },
+  {
+    "id": 7,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Manga Longa",
+    "preco": 49.9
+  },
+  {
+    "id": 8,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Manga Curta",
+    "preco": 39.9
+  },
+  {
+    "id": 9,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Linho",
+    "preco": 69.9
+  },
+  {
+    "id": 10,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Slim Fit",
+    "preco": 79.9
+  },
+  {
+    "id": 11,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Oversized",
+    "preco": 52.9
+  },
+  {
+    "id": 12,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Festa",
+    "preco": 95.9
+  },
+  {
+    "id": 13,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Slim Fit",
+    "preco": 79.9
+  },
+  {
+    "id": 14,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa Oversized",
+    "preco": 52.9
+  },
+  {
+    "id": 15,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Festa",
+    "preco": 95.9
+  },
+  {
+    "id": 16,
+    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "nome_produto": "Camisa de Festa",
+    "preco": 95.9
+  }
+]

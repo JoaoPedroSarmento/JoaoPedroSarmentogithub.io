@@ -1,0 +1,196 @@
+.bolas-carrossel {
+  display: flex;
+  gap: 10px;
+}
+
+.bola-carrossel {
+  border: 1px solid var(--preto-escuro);
+  height: 10px;
+}
+
+.botoes-carrossel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-end;
+}
+
+#lancamentos,
+#outlet,
+#destaques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 3.5em;
+}
+
+.imagem {
+  width: 100%;
+  min-height: 500px;
+  height: 70vh;
+  padding: 10px;
+  background-size: cover;
+  color: var(--cor-texto-geral);
+  display: grid;
+}
+
+.imagem .lancamento {
+  width: 90px;
+  height: 18px;
+  padding: 2px;
+  text-align: center;
+  font-size: 10px;
+  font-family: var(--fonte-popins);
+  background-color: var(--cinza-escuro);
+}
+
+.imagem .btns {
+  display: flex;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.imagem .btns .favoritar,
+.imagem .btns .espiar {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  font-size: 10px;
+  font-family: var(--fonte-popins);
+  background-color: var(--cinza-claro);
+}
+
+.imagem .btns .favoritar {
+  border-right: 2px solid var(--cor-texto-geral);
+  border-radius: 20px 0 0 20px;
+}
+
+.imagem .btns .espiar {
+  border-radius: 0 20px 20px 0;
+}
+
+.estrelas {
+  display: flex;
+  justify-content: center;
+}
+
+.estrelas .estrela {
+  width: 15px;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  width: 300px;
+}
+
+.preco {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  color: var(--laranja);
+  font-family: var(--fonte-popins);
+  margin-top: 10px;
+}
+
+.preco span {
+  font-size: 10px;
+  color: var(--preto-escuro);
+  font-weight: 600;
+}
+
+.preco .boleto {
+  color: var(--laranja);
+  font-weight: 600;
+}
+
+.textos > p {
+  font-family: var(--fonte-popins);
+}
+
+.textos > p:first-child {
+  font-size: 13px;
+}
+
+.textos > p:nth-child(2) {
+  font-size: 10px;
+}
+
+.compre-agora {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  width: 80%;
+  padding: 5px 10px;
+  background-color: var(--cinza-claro);
+  color: var(--cor-texto-geral);
+  cursor: pointer;
+  font-family: var(--fonte-popins);
+  letter-spacing: 2px;
+}
+
+
+.content-container-carrossel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.content-container-carrossel {
+  display: none;
+}
+
+.carrossel-ativo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-carrossel {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.bola-ativa {
+  background-color: var(--cinza-escuro);
+}
+
+.ver-todos {
+  cursor: pointer;
+}
+.ver-todos span {
+  border-bottom: 2px solid var(--cinza-claro);
+}
+
+.ver-todos {
+  font-size: 14px;
+  cursor: pointer;
+}
+.ver-todos span {
+  padding: 2px;
+  border-bottom: 2px solid var(--cinza-claro);
+}
+
+.item-carrossel .btns .favoritar,
+.item-carrossel .btns .espiar,
+.compre-agora {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.item-carrossel:hover .btns .favoritar,
+.item-carrossel:hover .btns .espiar,
+.item-carrossel:hover .compre-agora {
+  opacity: 1;
+}
