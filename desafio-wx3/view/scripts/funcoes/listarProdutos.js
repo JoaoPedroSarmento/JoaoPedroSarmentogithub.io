@@ -93,22 +93,22 @@ function layoutProdutoSectionPadrao(img_url, nome_produto, preco, id) {
             <div class="imagem" style="background-image: url('${img_url}');">
               <div class="btns">
                 <div class="favoritar">
-                  <img src="./view/img/coracao-2.png" width="12" alt="favoritar imagem">
+                  <img src="../desafio-wx3/view/img/coracao-2.png" width="12" alt="favoritar imagem">
                   <span>FAVORITAR</span>
                 </div>
                 <div class="espiar">
-                  <img src="./view/img/olho.png" width="18" alt="espiar foto">
+                  <img src="../desafio-wx3/view/img/olho.png" width="18" alt="espiar foto">
                   <span>ESPIAR</span>
                 </div>
               </div>
             </div>
             <div class="content-container-flex">
               <div class="estrelas">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
               </div>
               <div class="textos">
                 <p>${nome_produto}</p>
@@ -121,7 +121,7 @@ function layoutProdutoSectionPadrao(img_url, nome_produto, preco, id) {
                 <span class="boleto">no boleto</span>
                 <span>em até 10x de ${(preco / 10).toFixed(2)}</span>
               </div>
-              <a href="/produto.html?id=${id}" class="compre-agora">COMPRE AGORA</a>
+              <a href="../desafio-wx3/produto.html?id=${id}" class="compre-agora">COMPRE AGORA</a>
             </div>
           </div>`;
 }
@@ -134,22 +134,22 @@ function layoutProdutoSectionLancamentos(img_url, nome_produto, preco, id) {
               </div>
               <div class="btns">
                 <div class="favoritar">
-                  <img src="./view/img/coracao-2.png" width="12" alt="favoritar imagem">
+                  <img src="../desafio-wx3/view/img/coracao-2.png" width="12" alt="favoritar imagem">
                   <span>FAVORITAR</span>
                 </div>
                 <div class="espiar">
-                  <img src="./view/img/olho.png" width="18" alt="espiar foto">
+                  <img src="../desafio-wx3/view/img/olho.png" width="18" alt="espiar foto">
                   <span>ESPIAR</span>
                 </div>
               </div>
             </div>
             <div class="content-container-flex">
               <div class="estrelas">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
-                <img src="./view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
+                <img src="../desafio-wx3/view/img/icons8-estrela-48.png" alt="estrela" class="estrela">
               </div>
               <div class="textos">
                 <p>${nome_produto}</p>
@@ -162,7 +162,7 @@ function layoutProdutoSectionLancamentos(img_url, nome_produto, preco, id) {
                 <span class="boleto">no boleto</span>
                 <span>em até 10x de ${(preco / 10).toFixed(2)}</span>
               </div>
-              <a href="/produto.html?id=${id}" class="compre-agora">COMPRE AGORA</a>
+              <a href="../desafio-wx3/produto.html?id=${id}" class="compre-agora">COMPRE AGORA</a>
             </div>
           </div>`;
 }
