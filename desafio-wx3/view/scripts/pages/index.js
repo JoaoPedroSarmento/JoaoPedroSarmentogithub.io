@@ -11,7 +11,7 @@ import { somarValoresDosProdutos } from "../funcoes/funcoesUtil.js";
   // fazendo requisição para a listagem dos produtos
 
   const req = new Requisicao();
-  await req.getFetch("../../api/produtos.json", listarProdutos);
+  await req.getFetch("desafio-wx3/../../api/produtos.json", listarProdutos);
 
   // adicionando bolas do carrossel
 
