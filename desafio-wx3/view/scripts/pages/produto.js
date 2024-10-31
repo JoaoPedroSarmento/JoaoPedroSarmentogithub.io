@@ -8,7 +8,7 @@ import criarPaginaProduto from "../funcoes/criarPaginaProduto.js";
   console.log(id);
   if (id) {
     const req = new Requisicao();
-    const produto = await req.buscarFetch("desafio-wx3/../../api/produtos.json", id);
+    const produto = await req.buscarFetch("https://joaopedrosarmento.github.io/desafio-wx3/api/produtos.json", id);
     console.log(produto);
     await criarPaginaProduto(produto);
     adicionarProdutoAoCarrinho(produto);
