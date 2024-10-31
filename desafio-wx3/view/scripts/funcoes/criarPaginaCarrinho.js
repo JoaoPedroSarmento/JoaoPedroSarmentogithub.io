@@ -4,8 +4,10 @@ import {
 } from "../funcoes/funcoesUtil.js";
 
 export default function criarPaginaCarrinho() {
-  document.body.innerHTML = "";
+
   const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  if(carrinho.length){
+  document.body.innerHTML = "";
   const container = document.createElement("div");
   container.className = "produto-section";
 
@@ -32,4 +34,5 @@ export default function criarPaginaCarrinho() {
   totalSection.innerHTML = `<h2>Total carrinho: R$ ${total.toFixed(2)}</h2>`;
   totalSection.classList.add("total-section");
   document.body.append(totalSection, container);
+}
 }
