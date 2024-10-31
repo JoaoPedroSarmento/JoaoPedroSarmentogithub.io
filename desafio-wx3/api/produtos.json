@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "img_url": "../desafio-wx3/view/img/foto-mulher-fundo.webp",
     "nome_produto": "Camisa Estampada",
     "preco": 59.9
   },
@@ -37,7 +37,7 @@
   },
   {
     "id": 7,
-    "img_url": "/view/img/foto-mulher-fundo.webp",
+    "img_url": "../desafio-wx3/view/img/foto-mulher-fundo.webp",
     "nome_produto": "Camisa de Manga Longa",
     "preco": 49.9
   },
